@@ -1,0 +1,26 @@
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+li {
+    cursor: pointer;
+}
+
+ul#hello li:nth-child(2n) {
+   background: rgba(0,0,0,0.2);
+}
+
+ul#hello.animate li.dived-by-seven {
+   background: rgba(255,0,0,0.2);
+}
+ul#hello.animate li.dived-by-13 {
+   background: rgba(0,255,0,0.2);
+}
+ul#hello.animate li.dived-by-13-and-2 {
+   background: rgba(0,255,255,0.2);
+}
+
+
+ul li:hover {
+    transform: scale(1.1,1.5);
+}
