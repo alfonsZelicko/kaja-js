@@ -24,3 +24,13 @@ ul#hello.animate li.dived-by-13-and-2 {
 ul li:hover {
     transform: scale(1.1,1.5);
 }
+
+/*    sachy   */
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    width: 480px; /* 8 * 60px */
+    height: 480px; /* 8 * 60px */
+    border: 2px solid black;
+}
