@@ -9,7 +9,9 @@ console.log("-----------------------------------------------------")
 const samohlasky1 = ["a", "e", "i", "o", "u"];
 
 for (const samohlaska of samohlasky1) {
-    console.log(samohlaska);
+    console.log(samohlaska);                                //iterujeme přimo objekty v proměnné
 }
 
 console.log("-----------------------------------------------------")
+
+// sčítání cifer
