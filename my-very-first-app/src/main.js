@@ -107,7 +107,7 @@ const approaches = [
         generateRow: generateRowC,
         generateField: generateFieldA,
     }
-    ];
+];
 
 
 //zobraz(approaches[0].generateField());
