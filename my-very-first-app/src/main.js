@@ -15,3 +15,14 @@ for (const samohlaska of samohlasky1) {
 console.log("-----------------------------------------------------")
 
 // sčítání cifer
+
+const cislo = 131
+let rozdelena_cisla = cislo.toString().split('').map(Number);
+
+let soucet = 0;
+
+for (let i = 0; i<rozdelena_cisla.length ; i++) {
+    soucet += rozdelena_cisla[i]
+
+}
+console.log(soucet)
