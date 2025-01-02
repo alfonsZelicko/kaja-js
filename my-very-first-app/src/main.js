@@ -1,4 +1,6 @@
 // samohlásky
+let veta_od_uzivatele = prompt("Zadejte větu pro zjištění samohlásek")
+
 function obsahuje_samohlasky(veta) {
     const samohlasky = "aeiouáéíóúůě"
     let nalezeneSamohlasky = []
@@ -9,11 +11,11 @@ function obsahuje_samohlasky(veta) {
     }
     return nalezeneSamohlasky.length > 0 ? nalezeneSamohlasky : false; // Vrátí pole samohlásek nebo false
 }
-const veta1 = ("Tahle věta obsahuje samohlásky")
-const veta2 = ("nnnnnn rrrrr kkkk")
+const veta = (veta_od_uzivatele)
 
-console.log(obsahuje_samohlasky(veta1))
-console.log(obsahuje_samohlasky(veta2))
+
+console.log(obsahuje_samohlasky(veta))
+
 
 // console.log("-----------------------------------------------------")
 //
