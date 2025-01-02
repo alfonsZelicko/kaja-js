@@ -1,11 +1,11 @@
 let question = prompt("Write a number for factorial count")
 
 function faktorial(number) {
-    let vzorec = 1;
+    let zaklad = 1;
     for (let i = 1; i <= number; i++) {
-        vzorec = vzorec * i;
+        zaklad = zaklad * i;
     }
-    return vzorec
+    return zaklad
 }
 
 console.log(faktorial(question))
