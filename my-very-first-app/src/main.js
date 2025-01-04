@@ -1,16 +1,16 @@
 
-// sčítání cifer
+// sčítání cifer zmenou na string
 const cifernySoucetStr = (cislo) => {
     let rozdelena_cisla = BigInt(cislo).toString().split('').map(Number);
     let soucet = 0;
 
     for (let i = 0; i < rozdelena_cisla.length; i++) {
-        soucet += Number(rozdelena_cisla[i]);
+        soucet += rozdelena_cisla[i];
 
     }
     return soucet;
 }
-
+// sčítání cifer cislem rovnou
 const cifernySoucetNum = (cislo) => {
     let tmpCislo = cislo;
     let result = 0;
@@ -27,7 +27,7 @@ const cifernySoucetNum = (cislo) => {
 const recursionFn = (cislo) => cislo === 0 ? 0 : (cislo % 10) + recursionFn(Math.floor(cislo / 10));
 
 // const number = Number.MAX_VALUE;
-const number = Number.MAX_SAFE_INTEGER;
+const number = Number.MAX_VALUE;
 
 console.time('na hovno zpusob:');
 console.log(cifernySoucetStr(number))
